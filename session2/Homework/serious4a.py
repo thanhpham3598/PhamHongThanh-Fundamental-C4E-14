@@ -25,18 +25,21 @@
 #     else:
 #         print("x", end='')
 
-d
+# d
 
 a = int(input("Enter number of column:"))
 b = int(input("Enter number of row:"))
-for i in range(a*b):
+for i in range(b):
     if i % 2 == 0:
-        if i % a == (a - 1):
-            print("x")
-        else:
-            print("x", end='')
+        for c in range(a):
+            if c % 2 == 0:
+                print("x", end='')
+            else:
+                print("*", end='')
     else:
-        if i % a == (a - 1):
-            print("*")
-        else:
-            print("*", end='')
+        for c in range(a):
+            if c % 2 == 0:
+                print("*", end='')
+            else:
+                print("x", end='')
+    print()
