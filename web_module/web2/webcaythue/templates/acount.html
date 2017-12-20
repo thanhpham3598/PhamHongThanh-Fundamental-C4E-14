@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Player</title>
+  </head>
+  <body>
+    <h1>Players' Information</h1>
+    {% for information in all_information  %}
+      <img src="../static/images/male_profile.jpg" alt="">
+      <p>{{ information.name }}</p>
+      <p>{{ information.yob }}</p>
+      <p>{{ information.phone }}</p>
+      <p>{{ information.city }}</p>
+    {% endfor %}
+  </body>
+</html>
